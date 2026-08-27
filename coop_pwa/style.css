@@ -1,0 +1,9 @@
+*{box-sizing:border-box}body{margin:0;background:#05080d;color:#dff7ff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+#orb{width:220px;height:220px;border-radius:50%;border:2px solid #43c9ff;box-shadow:0 0 28px #168dff66,inset 0 0 30px #168dff44;display:grid;place-items:center}
+#wave{width:110px;height:3px;background:#82e8ff;box-shadow:0 0 12px #4bdcff}
+.speaking #wave{animation:pulse .22s infinite alternate}.listening #orb{animation:glow .7s infinite alternate}
+@keyframes pulse{to{height:42px;width:145px}}@keyframes glow{to{box-shadow:0 0 55px #168dffaa,inset 0 0 40px #168dff66}}
+#status{margin:22px 0 10px;font-size:12px;letter-spacing:2px}#transcript{min-height:80px;max-width:620px;width:100%;font-size:13px;opacity:.82;overflow:auto}
+.controls,.ask{display:flex;gap:9px;width:100%;max-width:620px;margin-top:14px}button,input{border-radius:12px;border:1px solid #24627a;background:#09131c;color:#e9fbff;padding:13px}
+button{flex:1}input{flex:5}.ask button{flex:1}video{width:100%;max-width:620px;border-radius:16px;margin-top:14px}
